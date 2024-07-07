@@ -1,0 +1,297 @@
+@font-face {
+    font-family: default-font;
+    src: url(fonts/manrope-regular.otf);
+}
+
+html, body {
+    font-size: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "default-font";
+    background-color: #151022;
+    color: #fafafa;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+}
+
+h1.header{
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "default-font";
+}
+
+li {
+    list-style: none;
+}
+
+.to-do-section {
+    margin-top: 60px;
+}
+
+.row {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.task-field {
+    display: flex;
+    align-items: center;
+    background-color: #2f2248;
+    border-radius: 24px;
+    margin-top: 48px;
+    padding-right: 0;
+}
+
+.input-field {
+    width: 100%;
+    border: 0;
+    padding: 8px 24px;
+    font-family: "default-font";
+    font-size: 16px;
+    line-height: 22px;
+    background-color: #2f2248;
+    color: #a38fcc;
+    border-radius: 24px;
+}
+
+.input-field::placeholder {
+    color: #a38fcc;
+    font-weight: 400;
+    font-family: default-font;
+}
+
+.input-field:focus {
+    outline: none;
+}
+
+.task-field button {
+    padding: 12px 40px;
+    border: 0;
+    border-radius: 28px;
+    font-family: "Manrope";
+    background-color: #6929f5;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.to-do-information {
+    margin-top: 40px;
+}
+
+.task-container {
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+    border-bottom: 1px solid #a38fcc;
+    padding-bottom: 16px;
+}
+
+.to-do-information_counter {
+    margin: 0;
+    padding: 0;
+}
+
+.task {
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 16px;
+}
+
+.icon-background {
+    background-color: #2e214a;
+    padding: 8px;
+    margin-left: auto;
+  
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+input[type = "checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type = "checkbox"]:checked {
+    background-color: #6e52ac;
+    border-color: #fff;
+}
+
+
+.todo-status {
+    font-family: "Manrope";
+    font-size: 16px;
+    color: #8e6ada;
+    
+}
+
+.active-link {
+    color: #cabbed;
+}
+
+ul.todo-nav {
+    display: flex;
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+ul.todo-nav li {
+  margin-right: 32px; /* Add some spacing between items */
+}
+
+.no-task-message {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: 1px solid #a38fcc;
+    margin-top: 32px;
+    padding-bottom: 26px;
+}
+
+.login-container {
+    padding: 40px 100px;
+    border-radius: 10px;
+}
+
+.action-button {
+    background-color: #6929f5;
+    color: #fff;
+    font-family: default-font;
+    border-radius: 24px;
+
+}
+
+.action-button:hover {
+    background-color: rgb(134, 80, 251);
+}
+
+.password-reset-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.btn-logout {
+    background-color: #32274b;
+    color: #fff;
+}
+
+.btn-logout:hover{
+    background-color: #624d93;
+    color: #fff;
+}
+
+.task-entry-action{
+    font-family: default-font;
+}
+
+.btn {
+    font-family: default-font;
+}
+
+.todo-status {
+    font-family: default-font;
+}
+
+
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  background-color: #3b324e;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+}
+.form input {
+  font-family: default-font;
+  color: #151022;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 8px;
+}
+.form button {
+  font-family: default-font;
+  text-transform: uppercase;
+  outline: 0;
+  background: #aa64e8;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #844bb3;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 14px;
+}
+.form .message a {
+  color: #aa64e8;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
